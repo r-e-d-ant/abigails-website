@@ -29,13 +29,13 @@
 
   <body>
     <header>
-      <nav class="container">
-        <a href="#main">Abigail McLeod-Peck</a>
-        <div id="right-nav">
-          <a href="#about">About Me</a>
-          <a href="#projects">Projects</a>
-          <a href="#footer">Contact</a>
-        </div>
+      <div class="my__name">Abigail McLeod-Peck</div>
+      <nav id="nav-bar">
+        <ul class="nav-list">
+          <li><a class="list_item" href="#about">About</a></li>
+          <li><a class="list_item" href="#projects">Projects</a></li>
+          <li><a class="list_item" href="#footer">Contact</a></li>
+        </ul>
       </nav>
     </header>
 
@@ -63,10 +63,10 @@
         </p>
         <p>
           I've been documenting my coding progress on my
-          <a href="https://twitter.com/abigailontech" target="_blank"
+          <a class="platform__links" href="https://twitter.com/abigailontech" target="_blank"
             >Twitter</a
           >
-          and my <a href="https://github.com/Abimcp" target="_blank">Github</a>,
+          and my <a class="platform__links" href="https://github.com/Abimcp" target="_blank">Github</a>,
           check them out!
         </p>
         <div id="about-images">
@@ -116,31 +116,32 @@
         </p>
         <form onsubmit="return myFunction(event)">
           <div class="fact-flex">
-            <label for="answer1"
+            <label class="label__container" for="answer1"
               ><input
+                class="input"
                 type="radio"
                 name="answer"
                 id="answer1"
                 value="skeleton"
-              />
-              I have cleaned a skeleton</label
+              />I have cleaned a skeleton</label
             >
 
-            <label for="answer2"
-              ><input type="radio" name="answer" id="answer2" value="smell" /> I
+            <label class="label__container" for="answer2"
+              ><input class="input" type="radio" name="answer" id="answer2" value="smell" /> I
               have no sense of smell</label
             >
 
-            <label for="answer3"
+            <label class="label__container" for="answer3"
               ><input
+                class="input"
                 type="radio"
                 name="answer"
                 id="answer3"
                 value="irish"
-              />I'm half Irish
+              /> I'm half Irish
             </label>
 
-            <input type="submit" value="Submit" />
+            <input class="submit_btn" type="submit" value="Submit" />
           </div>
         </form>
       </section>
@@ -148,7 +149,7 @@
 
     <footer id="footer">
       <div class="container">
-        <h2>Contact Me</h2>
+        <h2 id="contact_title">Contact Me</h2>
         <ul id="footer-flex">
           <li>📧 abigail@abigailmail.com</li>
           <li>☎️ 07123456789</li>
